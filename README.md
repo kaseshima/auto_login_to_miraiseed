@@ -22,3 +22,6 @@ JSのコードにログイン用URL、出席番号、パスワード、クラス
 ログイン情報をすべて入力した状態でこのブックマークレットを実行すると、勝手にブックマークレットを生成してくれるページへ移動します。
 <br>ページを移動していますが、アンカーを使ってページへログイン情報を渡しているので自分の思い違いがなければ外部へログイン情報が漏れることはないはずです。
 <br>外部サーバー上にログイン情報が残らなくても、閲覧履歴としてブラウザには「ログイン情報の入ったURL」が保存される場合があるので、念の為ブックマークを保存したあとはブックマークレット用のページの閲覧履歴を削除することをおすすめします。
+```
+javascript:function encode(e){return encodeURIComponent(e);};window.open("https://kaseshima.github.io/bookmarklet/miraiseed/#"+encode(encode(location.href)+'/'+encode($('#myClassId').val())+'/'+encode($('input.number').val())+'/'+encode($('input.pass').val())+'/'));
+```

@@ -1,4 +1,4 @@
-window.location.href = 'ミライシードのログイン用URL'
+window.location.href = 'ミライシードのログイン用URL';
 const Password = 'この中にパスワード';
 const StudentNumber ='この中に出席番号';
 const myClassId = 'この中に自分のクラスのクラスID' ;
